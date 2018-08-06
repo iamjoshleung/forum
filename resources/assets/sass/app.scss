@@ -1,0 +1,33 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+// @import "~font-awesome/scss/font-awesome";
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.ais-highlight > em {
+   background-color: yellow;
+   font-style: normal;
+}
+
+pre {
+  background: #f9f9f9;
+  border: 1px solid #c2bfba;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
