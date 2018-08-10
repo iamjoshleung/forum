@@ -33,7 +33,7 @@
                             <wysiwyg name="body"></wysiwyg>
                         </div>
                         <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="{{ config('council.recaptcha') }}"></div>
+                            <div class="g-recaptcha" data-sitekey="{{ config('council.recaptcha.site') }}"></div>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Publish</button>

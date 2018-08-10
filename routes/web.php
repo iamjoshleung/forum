@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('threads', 'ThreadController@index')->name('threads.index');
-Route::get('threads/create', 'ThreadController@create');
+Route::get('threads/create', 'ThreadController@create')->middleware('must-confirm-email');
 Route::get('threads/search', 'SearchController@show');
 Route::get('threads/{channel}', 'ThreadController@index');
 Route::get('threads/{channel}/{thread}', 'ThreadController@show')->name('threads.show');
