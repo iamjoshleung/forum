@@ -1,9 +1,8 @@
 @extends('layouts.app') 
-
 @section('header')
 <script src='https://www.google.com/recaptcha/api.js'></script>
 @endsection
-
+ 
 @section('content')
 <div class="container">
     <div class="row">
@@ -34,7 +33,7 @@
                             <wysiwyg name="body"></wysiwyg>
                         </div>
                         <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="6Lc9nGYUAAAAAJvYSW-oxggAKUegi77u68Lg-vxe"></div>
+                            <div class="g-recaptcha" data-sitekey="{{ config('council.recaptcha') }}"></div>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary">Publish</button>
